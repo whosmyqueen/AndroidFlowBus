@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FlowEventBus</string>
+    <string name="app_name">AndroidFlowBus</string>
     <string name="sendGlobalEvent">发送全局事件</string>
     <string name="sendActivityEvent">发送Activity事件"</string>
     <string name="sendFragmentEvent">发送Fragment事件</string>
