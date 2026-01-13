@@ -41,5 +41,5 @@ inline fun <reified T> clearStickyEvent() {
  * @param scope The ViewModelStoreOwner providing the local FlowEventBus instance.
  */
 inline fun <reified T> clearStickyEvent(scope: ViewModelStoreOwner) {
-    ViewModelProvider(scope).get(FlowEventBus::class.java).clearStickEvent(T::class.java.name)
+    ViewModelProvider(scope)[FlowEventBus::class.java].clearStickEvent(T::class.java.name)
 }

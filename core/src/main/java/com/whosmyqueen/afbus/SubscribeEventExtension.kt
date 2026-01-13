@@ -101,7 +101,7 @@ inline fun <reified T> ViewModelStoreOwner.subscribeEvent(
     } else {
         this
     }
-    return ViewModelProvider(owner).get(FlowEventBus::class.java)
+    return ViewModelProvider(owner)[FlowEventBus::class.java]
         .subscribeEvent(
             scope,
             T::class.java.name,

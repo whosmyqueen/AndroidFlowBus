@@ -8,8 +8,10 @@ activity = "1.12.2"
 constraintlayout = "2.2.1"
 lifecycleVersion = "2.10.0"
 fragment_version = "1.8.3"
+androidflowbus = "1.0.0"
 
 [libraries]
+androidflowbus = { module = "com.github.whosmyqueen:AndroidFlowBus", version.ref = "androidflowbus" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }

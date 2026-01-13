@@ -170,7 +170,9 @@ class FlowEventBus : ViewModel() {
         // getEventFlow ensures the corresponding Flow exists, creating it if it doesn't.
         // 尝试获取普通事件流和粘性事件流（如果存在），并组成列表。
         // getEventFlow 会确保对应的 Flow 存在，若不存在则创建。
-        Log.w(TAG, "post:$eventName value: $value")
+        if (isDebugLog) {
+            Log.w(TAG, "post:$eventName value: $value")
+        }
         listOfNotNull(
             getEventFlow(eventName, false), getEventFlow(eventName, true)
         ).forEach { flow ->
