@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "android-flow-bus"
+rootProject.name = "AndroidFlowBus"
 include(":app")
 include(":core")
